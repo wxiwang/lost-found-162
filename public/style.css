@@ -1,0 +1,91 @@
+/* this file is loaded by index.html and styles the page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 2em 1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+  max-width: calc(100% - 5rem);
+  line-height: 1.1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+div#addBox {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+div#buttonBox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+button#submitButton {
+  background-color: #bbbbf2;
+  border: 2px solid black;
+  border-radius: .25em;
+  cursor: pointer;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 10em;
+}
+
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cardImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.image form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image form input[type="file"] {
+  font-size: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
