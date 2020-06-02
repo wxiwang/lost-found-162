@@ -1,0 +1,79 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Glitch!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2>Groceries for Grandma</h2>
+    </header>
+
+    <main>
+      <p class="note">
+      Gran: you can add to your list here.  
+      I will go shopping on Sunday - Love, Lee 
+       </p>
+
+    
+      <div id="title">
+          <p>
+            Title
+          </p>
+          <input id="title-input" type="text" maxlength="50">
+      </div>
+       <div id="category">
+          <p>
+            Category
+          </p>
+          <input id="category-input" type="text" maxlength="50">
+      </div>
+      <div id="description">
+          <p>
+            Description
+          </p>
+          <input id="description-input" type="text" maxlength="100">
+      </div>
+      
+      <div class="image upload">
+        <img id="cardImg" alt="user uploaded img"/>
+  
+          
+ 
+        <form method="post" enctype="multipart/form-data">
+          <button class="btn">Choose Image</button>
+          <input id="imgUpload" type="file" accept="image/*" name="photo"/> 
+        </form>    
+      </div>
+      
+      <div id="buttonBox">
+        <button id="submitButton">Next</button>     
+      </div>
+
+      <section class="groceries">
+        <ul id="gransList">
+        </ul>
+      </section>
+      
+    </main>
+
+    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+ <!--   <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div> -->
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
